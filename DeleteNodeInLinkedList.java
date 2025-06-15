@@ -1,6 +1,6 @@
 class Node {
-    int data;   // Stores the integer data.
-    Node next;  // Pointer to the next node in the list.
+    int data;   
+    Node next;  
 
     // Constructor to initialize a node with data.
     public Node(int data) {
@@ -13,18 +13,14 @@ public class DeleteNodeInLinkedList {
 
     Node head;  // Head pointer for the linked list.
 
-    /**
-     * Inserts a new node with new_data at the beginning of the list.
-     */
+  
     public void push(int new_data) {
         Node new_node = new Node(new_data); // Create a new node.
         new_node.next = head;               // Link the new node with the current head.
         head = new_node;                    // Update head to point to the new node.
     }
 
-    /**
-     * Prints the linked list starting from the given node.
-     */
+    
     public void printList(Node node) {
         while (node != null) {
             System.out.print(node.data + " -> ");
@@ -33,10 +29,7 @@ public class DeleteNodeInLinkedList {
         System.out.println("None");
     }
 
-    /**
-     * Deletes the first occurrence of a node that contains the key value.
-     * Returns the head of the modified list.
-     */
+  
     public Node deleteNode(Node head, int key) {
         // If the list is empty, return head.
         if (head == null) {
@@ -45,7 +38,7 @@ public class DeleteNodeInLinkedList {
 
         // If the head node holds the key to be deleted, update head.
         if (head.data == key) {
-            return head.next; // The new head becomes the next node.
+            return head.next; 
         }
 
         // Initialize current and previous pointers.
@@ -54,8 +47,8 @@ public class DeleteNodeInLinkedList {
 
         // Traverse the list until the node with the key is found.
         while (current != null && current.data != key) {
-            prev = current;         // Keep track of previous node.
-            current = current.next; // Move to the next node.
+            prev = current;        
+            current = current.next; 
         }
 
         // If the key is not present in the list, return the unchanged head.
