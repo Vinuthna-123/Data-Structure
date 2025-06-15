@@ -65,8 +65,6 @@ public class DeleteNodeInLinkedList {
 
     public static void main(String[] args) {
         DeleteNodeInLinkedList list = new DeleteNodeInLinkedList();
-
-        // Create a linked list: 10 -> 20 -> 30 -> 40 -> 50 -> None
         list.push(50);
         list.push(40);
         list.push(30);
