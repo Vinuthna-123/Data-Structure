@@ -27,7 +27,3 @@ public class Minmax {
         System.out.println(max);
     }
 }
-// Iterator <Integer> itx = a.iterator();
-//while(itx.hasNext()){
-    //int x = itx.next();
-//}
