@@ -1,29 +1,4 @@
-// class Linked{
-//     int data;
-//     Linked next;
-//     int id;
-//     Linked(int data,int id){
-//         this.data = data;
-//         this.next=null;
-//         this.id=this.hashCode();
-//     }
-// }
-// public class ReverseLinkedList {
-//     private Linked head;
-//     ReverseLinkedList(){
-//         this.head=null;
 
-//     }
-//     public void Reverse(){
-//       Linked temp = head.next;
-//       Linked current = head;
-//       Linked prev = null;
-//       while(current!=null){
-        
-//       }
-//     }
-    
-// }
 import java.util.Stack;
 class Node {
     int data;
@@ -37,19 +12,6 @@ class Node {
 
 class ReverseLinkedList {
     Node head;
-
-    // void reverse() {
-    //     Node prev = null;
-    //     Node current = head;
-    //     Node next = null;
-    //     while (current != null) {
-    //         next = current.next;
-    //         current.next = prev;
-    //         prev = current;
-    //         current = next;
-    //     }
-    //     head = prev;
-    // }
     void reverseUsingStack() {
         if (head == null || head.next == null) {
             // If the list is empty or contains only one node, no need to reverse
@@ -83,12 +45,6 @@ class ReverseLinkedList {
         }
         System.out.println();
     }
-
-    // void push(int data) {
-    //     Node newNode = new Node(data);
-    //     newNode.next = head;
-    //     head = newNode;
-    // }
     void push(int data) {
         Node newNode = new Node(data);
         if (head == null) {
