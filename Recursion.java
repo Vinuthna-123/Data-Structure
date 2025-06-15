@@ -83,18 +83,6 @@ public class Recursion {
     public static void main(String[] args){
         int[] arr = {1,10,5,45,6};
         Node head = createSinglyLinkedListBackward(arr);
-//        printLL(head);
-        //fibonacci series:  0 1 1 2 3 5 8 13 21 34
-        //*nth fibonaci num: 1 2 3 4 5 6 7 8  9  10
-//        int x = fibIter(500);
-//        System.out.println(x);
-
-
-//        problem #1 Delete a linked list node with value 10 using recursion
-//        1 -> 10 -> 5 -> 45 -> 6 -> null
-//        1) Operation: delete (prev node)
-//        2) Terminal case: after we reach the required node
-//        3) function call: (curr,next)
         int target = 10;
         System.out.println("BEFORE");
         printNodeChain(head);
